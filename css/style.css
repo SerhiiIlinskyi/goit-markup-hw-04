@@ -22,12 +22,12 @@
 }
 .adress .footer-a:hover,
 .adress .footer-a:focus {
-  color: var(--brand -color-name);
+  color: var(--brand-color-name);
 }
 .poster .poster-blank:hover,
 .poster .poster-blank:focus {
   display: flex;
-  box-shadow: 0px 4px 4px 0px teal;
+  box-shadow: 0px 4px 4px 0px var(--brand-color-substrate);
 }
 * {
   box-sizing: border-box;
@@ -200,6 +200,7 @@ body {
   border-radius: 4px;
   width: 200px;
   height: 50px;
+  box-shadow: 0 4px 4px 0 rgba (0, 0, 0, 0.15);
 }
 /**особенности**/
 .peculiarities {
@@ -284,7 +285,6 @@ body {
 .igor {
   width: 270px;
   height: 428px;
-  padding-right: 30px;
   box-shadow: 0 5px 5px 0 var(--brand-color-text);
 }
 .olha {
@@ -328,11 +328,6 @@ body {
   margin: 15px;
   margin-bottom: 50px;
 }
-.poster {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 .button-a {
   border: none;
   cursor: pointer;
@@ -367,9 +362,17 @@ body {
   height: 38px;
   width: 130px;
 }
+
+.poster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .poster-blank {
   width: 370px;
   height: 404px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 .poster-foto {
   text-decoration: none;
@@ -393,7 +396,7 @@ body {
   margin-bottom: 20px;
   margin-left: 24px;
 }
-/**.technokryak {
+.technokryak {
   margin-bottom: 30px;
 }
 .new-orleanvs {
@@ -411,7 +414,7 @@ body {
 .borders {
   margin-bottom: 30px;
 }
-.limited {
+/**.limited {
   margin-top: 30px;
 }
 .lab {
