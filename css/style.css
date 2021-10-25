@@ -18,10 +18,16 @@
 .button .button-alle:focus {
   background-color: var(--brand-color-basic);
   color: var(--brand-color-name);
+  box-shadow: 0 2px 2px 0 var(--brand-color-text);
 }
 .adress .footer-a:hover,
 .adress .footer-a:focus {
-  color: var(--brand-color-name);
+  color: var(--brand -color-name);
+}
+.poster .poster-blank:hover,
+.poster .poster-blank:focus {
+  display: flex;
+  box-shadow: 0px 4px 4px 0px teal;
 }
 * {
   box-sizing: border-box;
@@ -164,9 +170,11 @@ body {
 /**шапка**/
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1636329600&Signature=dNouDNzs8c4PPvMlB7s35kI6y2pl0LhxsOKY-xG-UrYbB9x2UDSxHvB9uoMhs1zXD8eIwi2WcYqBWgyVi-DpO64fDW254wWYmGiKbbZQKbp-mVEhMSbrRIDOhTMas7HxpY3qVuZpBmWyiVWdqBT2IeZ5c2td-jdxTxI44pXljWuZbWMLDTX4erbLuX6m5s8FdLjyuj8YlZMyoM9DoT8U1zeira2UDIAntlIAHOWBkVa~dbz6S345eWlnvYDfO-z0D4hyC3bIG-Zzt5~eraSEaJ5JTGBDsLWFLikhWig7hu9oHMw7G0SNpxHgwoYNzEu24V2d3cBzWktVvF30cf3cbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA")
-      linear-gradient rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient rgba(47, 48, 58, 0.4), (47, 48, 58, 0.4),
+    url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1636329600&Signature=dNouDNzs8c4PPvMlB7s35kI6y2pl0LhxsOKY-xG-UrYbB9x2UDSxHvB9uoMhs1zXD8eIwi2WcYqBWgyVi-DpO64fDW254wWYmGiKbbZQKbp-mVEhMSbrRIDOhTMas7HxpY3qVuZpBmWyiVWdqBT2IeZ5c2td-jdxTxI44pXljWuZbWMLDTX4erbLuX6m5s8FdLjyuj8YlZMyoM9DoT8U1zeira2UDIAntlIAHOWBkVa~dbz6S345eWlnvYDfO-z0D4hyC3bIG-Zzt5~eraSEaJ5JTGBDsLWFLikhWig7hu9oHMw7G0SNpxHgwoYNzEu24V2d3cBzWktVvF30cf3cbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   /**width: 1600px;
   height: 600px;**/
   padding-top: 200px;
@@ -264,21 +272,38 @@ body {
   color: var(--brand-color-title);
   font-weight: 500;
   text-align: center;
+  padding-top: 30px;
 }
 .name-specialitat {
   font-size: 16px;
   color: var(--brand-color-text);
   font-weight: 400;
   text-align: center;
+  padding-top: 10px;
 }
 .igor {
+  width: 270px;
+  height: 428px;
   padding-right: 30px;
+  box-shadow: 0 5px 5px 0 var(--brand-color-text);
 }
 .olha {
+  width: 270px;
+  height: 428px;
   padding-right: 30px;
+  box-shadow: 0 5px 5px 0 var(--brand-color-text);
 }
 .nicola {
+  width: 270px;
+  height: 428px;
   padding-right: 30px;
+  box-shadow: 0 5px 5px 0 var(--brand-color-text);
+}
+.mihail {
+  width: 270px;
+  height: 428px;
+  padding-right: 30px;
+  box-shadow: 0 5px 5px 0 var(--brand-color-text);
 }
 /**portfolio**/
 /**button**/
@@ -343,7 +368,8 @@ body {
   width: 130px;
 }
 .poster-blank {
-  display: flex;
+  width: 370px;
+  height: 404px;
 }
 .poster-foto {
   text-decoration: none;
@@ -354,6 +380,8 @@ body {
   color: var(--brand-color-title);
   font-weight: 700;
   /**cursor: pointer;**/
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 .poster-text {
   font-size: 16px;
@@ -361,8 +389,11 @@ body {
   color: var(--brand-color-text);
   font-weight: 400;
   /**cursor: pointer;**/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
-.technokryak {
+/**.technokryak {
   margin-bottom: 30px;
 }
 .new-orleanvs {
@@ -380,13 +411,15 @@ body {
 .borders {
   margin-bottom: 30px;
 }
-/**.limited {
+.limited {
+  margin-top: 30px;
 }
 .lab {
+  margin-top: 30px;
 }
-.business{
-}
-**/
+.business {
+  margin-top: 30px;
+}**/
 
 /**подвал**/
 .footer {
