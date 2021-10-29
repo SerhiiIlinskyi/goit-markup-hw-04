@@ -5,6 +5,13 @@
   --brand-color-substrate: #2f303a;
   --brand-color-basic: #2196f3;
   --brand-color-name: #ffffff;
+  --brand-color-line: #ececec;
+  --brand-color-back: #f5f4fa;
+  --brand-color-backgraund: rgba(47, 48, 58, 0.4);
+  --brand-color-nummer: rgba(245, 244, 250, 1);
+  --brand-color-link: #AFB1B8;
+
+
 }
 /**изменения цвета кнопки**/
 .header .color-block:hover,
@@ -29,6 +36,8 @@
   display: flex;
   box-shadow: 0px 4px 4px 0px var(--brand-color-substrate);
 }
+
+
 * {
   box-sizing: border-box;
 }
@@ -56,48 +65,52 @@ body {
   line-height: 1.72;
   background-color: var(--brand-color-name);
   letter-spacing: 0.03em;
-  width: 1600px;
-}
+  }
 
 .section {
-  /**padding-top: 94px;
-  padding-bottom: 94px;**/
-  padding: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.section-help {
+  padding-bottom: 0px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /**padding-top: 94px;
-  padding-bottom: 94px;**/
 }
 /**верхняя линия**/
 .header {
-  /**width: 1600px;
-  height: 80px;**/
+  border: 1px solid var(--brand-color-line);
 }
 .header-container {
-  width: 1200px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   margin: 0 auto;
   display: flex;
   align-items: center;
 }
-.web-studio {
+.web-studio-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.17;
   color: var(--brand-color-basic);
   font-weight: 700;
   text-decoration: none;
-  /**width: 145px;
-  height: 31px;**/
-  margin-right: 93px;
-  /**display: flex;**/
 }
+.web-studio-footer {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--brand-color-basic);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .heder-web {
   color: var(--brand-color-title);
 }
@@ -117,66 +130,42 @@ body {
 }
 .drei-button {
   display: flex;
-  /**align-items: center;**/
+  margin-left: 93px;
 }
-.studio {
+
+.drei-button-item {
   font-weight: 500;
   line-height: 1.17;
   color: var(--brand-color-title);
-  /**width: 49px;
-  height: 16px;
-  top: 32px;
-  left: 453px;**/
   margin-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.portfolio {
-  font-weight: 500;
-  line-height: 1.17;
-  color: var(--brand-color-title);
-  /**width: 77px;
-  height: 16px;
-  top: 32px;
-  left: 552px;**/
-  margin-right: 50px;
-}
-.contacts {
-  font-weight: 500;
-  line-height: 1.17;
-  color: var(--brand-color-title);
-  /**width: 68px;
-  height: 16px;**/
-}
+
 .zwei-button {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
-.header-https {
+.zwei-button-item {
   font-weight: 500;
   line-height: 1.17;
   color: var(--brand-color-text);
-  /**width: 135px;
-  height: 16px;**/
 }
-.header-tel {
-  font-weight: 500;
-  line-height: 1.17;
-  color: var(--brand-color-text);
-  /**width: 122px;
-  height: 16px;**/
-  margin-left: 50px;
+.zwei-button-item:not(:last-child) {
+  margin-right: 50px;
 }
+
 /**index**/
 /**шапка**/
 .hero {
-  background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient rgba(47, 48, 58, 0.4), (47, 48, 58, 0.4),
-    url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1636329600&Signature=dNouDNzs8c4PPvMlB7s35kI6y2pl0LhxsOKY-xG-UrYbB9x2UDSxHvB9uoMhs1zXD8eIwi2WcYqBWgyVi-DpO64fDW254wWYmGiKbbZQKbp-mVEhMSbrRIDOhTMas7HxpY3qVuZpBmWyiVWdqBT2IeZ5c2td-jdxTxI44pXljWuZbWMLDTX4erbLuX6m5s8FdLjyuj8YlZMyoM9DoT8U1zeira2UDIAntlIAHOWBkVa~dbz6S345eWlnvYDfO-z0D4hyC3bIG-Zzt5~eraSEaJ5JTGBDsLWFLikhWig7hu9oHMw7G0SNpxHgwoYNzEu24V2d3cBzWktVvF30cf3cbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  /**background-color: var(--brand-color-back);**/
+  background-image: /**linear-gradient rgba(47, 48, 58, 0.4), (47, 48, 58, 0.4),**/
+  url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1636329600&Signature=dNouDNzs8c4PPvMlB7s35kI6y2pl0LhxsOKY-xG-UrYbB9x2UDSxHvB9uoMhs1zXD8eIwi2WcYqBWgyVi-DpO64fDW254wWYmGiKbbZQKbp-mVEhMSbrRIDOhTMas7HxpY3qVuZpBmWyiVWdqBT2IeZ5c2td-jdxTxI44pXljWuZbWMLDTX4erbLuX6m5s8FdLjyuj8YlZMyoM9DoT8U1zeira2UDIAntlIAHOWBkVa~dbz6S345eWlnvYDfO-z0D4hyC3bIG-Zzt5~eraSEaJ5JTGBDsLWFLikhWig7hu9oHMw7G0SNpxHgwoYNzEu24V2d3cBzWktVvF30cf3cbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /**width: 1600px;
-  height: 600px;**/
+  background-color: var(--brand-color-substrate);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -200,17 +189,16 @@ body {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  box-shadow: 0 4px 4px 0 rgba (0, 0, 0, 0.15);
 }
 /**особенности**/
-.peculiarities {
-  /**width: 1170px;
-  height: 101px;**/
-}
 .peculiaritiese {
   /**padding-left: 215px;**/
   display: flex;
   align-items: stretch;
+  padding-top: 0px;
+}
+.block:not(:last-child) {
+  margin-right: 30px;
 }
 .block-name {
   width: 270px;
@@ -225,34 +213,24 @@ body {
   color: var(--brand-color-text);
 }
 /**Чем мы занимаемся**/
-.how {
-  /**padding-left: 215px;**/
-  /**width: 1170px;
-  height: 386px;**/
-}
 .how-a {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
-  padding-bottom: 15px;
   text-align: center;
   margin-bottom: 50px;
 }
-.imgbox-a {
-  padding-right: 30px;
-}
-.imgbox-b {
+.imgbox-a:not(:last-child) {
   padding-right: 30px;
 }
 .imgbox {
-  padding: 15px;
+  /**padding: 15px;**/
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /**Наша команда**/
 .ourteam {
-  /** width: 1600px;
-  height: 648px;**/
+  background: var(--brand-color-back);
 }
 .our {
   font-size: 36px;
@@ -260,57 +238,48 @@ body {
   color: var(--brand-color-title);
   text-align: center;
   font-weight: 700;
-  padding-bottom: 15px;
   margin-bottom: 50px;
 }
 .fotogrupp {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: calc(100% - 30px);
 }
+.foto-a {
+  box-shadow: 0 2px 1px 0 var(--brand-color-text);
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.foto-a:not(:last-child) {
+  margin-right: 30px;
+}
+
 .name-img {
   font-size: 16px;
   line-height: 1.2;
   color: var(--brand-color-title);
   font-weight: 500;
-  text-align: center;
-  padding-top: 30px;
 }
 .name-specialitat {
   font-size: 16px;
   color: var(--brand-color-text);
   font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.name-i-s {
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
-  padding-top: 10px;
 }
-.igor {
-  width: 270px;
-  height: 428px;
-  box-shadow: 0 5px 5px 0 var(--brand-color-text);
-}
-.olha {
-  width: 270px;
-  height: 428px;
-  padding-right: 30px;
-  box-shadow: 0 5px 5px 0 var(--brand-color-text);
-}
-.nicola {
-  width: 270px;
-  height: 428px;
-  padding-right: 30px;
-  box-shadow: 0 5px 5px 0 var(--brand-color-text);
-}
-.mihail {
-  width: 270px;
-  height: 428px;
-  padding-right: 30px;
-  box-shadow: 0 5px 5px 0 var(--brand-color-text);
-}
+
 /**portfolio**/
 /**button**/
 .button-poster {
-  /**width: 1170px;
-  height: 1360px;**/
+  /height: 1360px;**/
   display: block;
+  padding-bottom: 94px;
 }
 .button {
   font-size: 16px;
@@ -325,54 +294,56 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 15px;
   margin-bottom: 50px;
 }
-.button-a {
+.button-alle {
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+}
+.button-all:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-a {
   height: 38px;
   width: 73px;
-  margin-right: 8px;
 }
 .button-b {
-  border: none;
-  cursor: pointer;
   height: 38px;
   width: 128px;
-  margin-right: 8px;
 }
 .button-c {
-  border: none;
-  cursor: pointer;
   height: 38px;
   width: 145px;
-  margin-right: 8px;
 }
 .button-d {
-  border: none;
-  cursor: pointer;
   height: 38px;
   width: 103px;
-  margin-right: 8px;
 }
 .button-e {
-  border: none;
-  cursor: pointer;
   height: 38px;
   width: 130px;
 }
-
 .poster {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
+.poster-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .poster-blank {
-  width: 370px;
-  height: 404px;
+  display: flex;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+.poster-blank:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.poster-blank:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
-  border: 1px solid rgba(238, 238, 238, 1);
 }
 .poster-foto {
   text-decoration: none;
@@ -382,56 +353,23 @@ body {
   line-height: 2;
   color: var(--brand-color-title);
   font-weight: 700;
-  /**cursor: pointer;**/
   margin-bottom: 4px;
-  margin-left: 24px;
+  /**cursor: pointer;**/
 }
 .poster-text {
   font-size: 16px;
   line-height: 1.9;
   color: var(--brand-color-text);
   font-weight: 400;
-  /**cursor: pointer;**/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-}
-.technokryak {
-  margin-bottom: 30px;
-}
-.new-orleanvs {
-  margin-bottom: 30px;
-}
-.seafood {
-  margin-bottom: 30px;
-}
-.prime {
-  margin-bottom: 30px;
-}
-.boxes {
-  margin-bottom: 30px;
-}
-.borders {
-  margin-bottom: 30px;
-}
-/**.limited {
-  margin-top: 30px;
-}
-.lab {
-  margin-top: 30px;
-}
-.business {
-  margin-top: 30px;
-}**/
+  }
 
 /**подвал**/
 .footer {
   background-color: var(--brand-color-substrate);
   font-weight: 400;
-  width: 1600px;
+  /**width: 1600px;**/
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 90px;
   display: flex;
 }
 .adress-adress {
@@ -443,21 +381,48 @@ body {
   flex-direction: column;
   padding-top: 15px;
 }
-.footer-adress {
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-a {
   font-style: normal;
   font-weight: 400;
   color: var(--brand-color-text);
   text-decoration: none;
 }
-.footer-httpsinfom {
-  font-style: normal;
-  font-weight: 400;
-  color: var(--brand-color-text);
-  text-decoration: none;
+
+
+
+/**social**/
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--brand-color-basic);
 }
-.footer-tel {
-  font-style: normal;
-  font-weight: 400;
-  color: var(--brand-color-text);
-  text-decoration: none;
+.social-link:hover, .social-icon,
+.social-link:focus, .social-icon {
+  fill: var(--brand-color-back)
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+  }
+  .social-item:not(last-child) {
+    margin-right: 10px;
+  }
+.social-icon {
+  fill: var(--brand-color-substrate);
+  }
+.social-link {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
