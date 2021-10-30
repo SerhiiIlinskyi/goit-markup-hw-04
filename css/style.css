@@ -156,12 +156,12 @@ body {
 /**index**/
 /**шапка**/
 .hero {
-  /**background-color: var(--brand-color-back);**/
-  background-image: /**linear-gradient rgba(47, 48, 58, 0.4), (47, 48, 58, 0.4),**/ url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1636329600&Signature=dNouDNzs8c4PPvMlB7s35kI6y2pl0LhxsOKY-xG-UrYbB9x2UDSxHvB9uoMhs1zXD8eIwi2WcYqBWgyVi-DpO64fDW254wWYmGiKbbZQKbp-mVEhMSbrRIDOhTMas7HxpY3qVuZpBmWyiVWdqBT2IeZ5c2td-jdxTxI44pXljWuZbWMLDTX4erbLuX6m5s8FdLjyuj8YlZMyoM9DoT8U1zeira2UDIAntlIAHOWBkVa~dbz6S345eWlnvYDfO-z0D4hyC3bIG-Zzt5~eraSEaJ5JTGBDsLWFLikhWig7hu9oHMw7G0SNpxHgwoYNzEu24V2d3cBzWktVvF30cf3cbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-color: rgba(196, 196, 196, 1);
+  background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1636329600&Signature=dNouDNzs8c4PPvMlB7s35kI6y2pl0LhxsOKY-xG-UrYbB9x2UDSxHvB9uoMhs1zXD8eIwi2WcYqBWgyVi-DpO64fDW254wWYmGiKbbZQKbp-mVEhMSbrRIDOhTMas7HxpY3qVuZpBmWyiVWdqBT2IeZ5c2td-jdxTxI44pXljWuZbWMLDTX4erbLuX6m5s8FdLjyuj8YlZMyoM9DoT8U1zeira2UDIAntlIAHOWBkVa~dbz6S345eWlnvYDfO-z0D4hyC3bIG-Zzt5~eraSEaJ5JTGBDsLWFLikhWig7hu9oHMw7G0SNpxHgwoYNzEu24V2d3cBzWktVvF30cf3cbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--brand-color-substrate);
+  /**background-color: var(--brand-color-substrate);**/
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -391,12 +391,12 @@ body {
 .social-link:focus {
   background-color: var(--brand-color-basic);
 }
-.social-link:hover,
+/**.social-link:hover,
 .social-icon,
 .social-link:focus,
 .social-icon {
   fill: var(--brand-color-back);
-}
+}**/
 
 .manager-social {
   display: flex;
@@ -483,6 +483,7 @@ body {
   margin-right: 30px;
 }
 .customers-icon {
+  margin-top: 16px;
 }
 
 .icon-item {
