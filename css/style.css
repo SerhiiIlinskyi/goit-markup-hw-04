@@ -448,22 +448,17 @@ body {
 /**foter social**/
 
 .footer-social {
-}
-
-.footer-social {
-  align-items: center;
+  display: block;
+  /**align-items: center;**/
   color: var(--brand-color-back);
 }
-
 .footer-social-icon {
   fill: var(--brand-color-name);
 }
-
 .footer-social-icon:hover,
 .footer-social-icon:focus {
   fill: var(--brand-color-name);
 }
-
 .footer-social-link {
   background-color: var(--brand-color-title);
 }
@@ -477,25 +472,16 @@ body {
   font-weight: 700;
   margin-bottom: 50px;
 }
-
 .customers-social {
   display: flex;
   justify-content: center;
 }
-
 .customers-item {
   width: 170px;
   height: 92px;
   border: 1px solid var(--brand-color-link);
   border-radius: 4px;
 }
-
-.customers-link {
-}
-/**.customers-item:hover,
-.customers-item:focus {
-  fill: var(--brand-color-basic);
-}**/
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -507,15 +493,15 @@ body {
 .customers-item:focus {
   fill: var(--brand-color-basic);
 }
-
 .customers-item:hover .customers-icon,
 .customers-item:focus .customers-icon {
   fill: var(--brand-color-basic);
 }
-/**.customers-social .customers-link:hover,
-.customers-social .customers-link:focus {
-  fill: var(--brand-color-basic);
-}**/
+.customers-social .customers-item:hover,
+.customers-social .customers-item:focus {
+  display: flex;
+  border: 2px solid var(--brand-color-basic);
+}
 
 .icon-item {
   display: flex;
