@@ -152,8 +152,8 @@ body {
 .zwei-button-item:not(:last-child) {
   margin-right: 50px;
 }
-.icon-header .icon-header-linc:focus,
-.icon-header .icon-header-linc:hover {
+.icon-header .icon-header-item:focus,
+.icon-header .icon-header-item:hover {
   background-color: var(--brand-color-name);
   fill: var(--brand-color-basic);
 }
@@ -165,7 +165,7 @@ body {
 }
 
 .icon-header-item {
-  fill: var(--brand-color-back);
+  fill: var(--brand-color-text);
 }
 
 /**index**/
@@ -408,8 +408,8 @@ body {
 .social-link:focus {
   background-color: var(--brand-color-basic);
 }
-.social-icon:hover,
-.social-icon:focus {
+.social-item .social-icon:hover,
+.social-item .social-icon:focus {
   fill: var(--brand-color-back);
 }
 
@@ -421,12 +421,13 @@ body {
 .social-item {
   width: 44px;
   height: 44px;
+  fill: var(--brand-color-back);
 }
 .social-item:not(last-child) {
   margin-right: 10px;
 }
 .social-icon {
-  fill: var(--brand-color-substrate);
+  fill: var(--brand-color-link);
 }
 .social-link {
   width: 100%;
@@ -435,6 +436,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--brand-color-back);
 }
 
 /**foter social**/
@@ -451,9 +453,9 @@ body {
   fill: var(--brand-color-name);
 }
 
-.footer-social-link .footer-social-icon:hover,
-.footer-social-link .footer-social-icon:focus {
-  fill: violet;
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  fill: var(--brand-color-name);
 }
 
 .footer-social-link {
@@ -481,19 +483,28 @@ body {
   border: 1px solid var(--brand-color-link);
   border-radius: 4px;
 }
+
 .customers-link {
 }
-
+.customers .customers-item:hover,
+.customers .customers-item:focus {
+  fill: var(--brand-color-basic);
+}
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
 .customers-icon {
+  fill: var(--brand-color-link);
   margin-top: 16px;
 }
 .customers-social .customers-icon:hover,
 .customers-social .customers-icon:focus {
   fill: var(--brand-color-basic);
 }
+/**.customers-social .customers-link:hover,
+.customers-social .customers-link:focus {
+  fill: var(--brand-color-basic);
+}**/
 
 .icon-item {
   display: flex;
