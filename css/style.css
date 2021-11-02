@@ -10,6 +10,8 @@
   --brand-color-backgraund: rgba(47, 48, 58, 0.4);
   --brand-color-nummer: rgba(245, 244, 250, 1);
   --brand-color-link: #afb1b8;
+  --brand-color-recht: rgba(238, 238, 238, 1);
+  --brand-color-schadow: #e5e5e5;
 }
 /**изменения цвета кнопки**/
 .header .color-block:hover,
@@ -23,7 +25,7 @@
 .button .button-alle:focus {
   background-color: var(--brand-color-basic);
   color: var(--brand-color-name);
-  box-shadow: 0 2px 2px 0 var(--brand-color-text);
+  box-shadow: 0 2px 2px 0 var(--brand-color-link);
 }
 .adress .footer-a:hover,
 .adress .footer-a:focus {
@@ -32,7 +34,7 @@
 .poster .poster-blank:hover,
 .poster .poster-blank:focus {
   display: flex;
-  box-shadow: 0px 4px 4px 0px var(--brand-color-substrate);
+  box-shadow: 1px 4px 6px 0px var(--brand-color-text);
 }
 
 * {
@@ -166,13 +168,15 @@ body {
 }
 
 .icon-header-item {
+  display: flex;
+  align-self: center;
   fill: var(--brand-color-text);
 }
 
 /**index**/
 /**шапка**/
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   background-color: rgba(196, 196, 196, 0.1);
   background-image: linear-gradient(
@@ -355,7 +359,7 @@ body {
 
 .poster-blank {
   display: flex;
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid var(--brand-color-recht);
 }
 .poster-blank:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -446,15 +450,47 @@ body {
 }
 
 /**foter social**/
+.footer-alle {
+  display: flex;
+  align-items: baseline;
+}
 
 .footer-social {
-  display: block;
+  /**display: flex;
   /**align-items: center;**/
   color: var(--brand-color-back);
+  display: block;
+  /**align-items: center;
+  justify-content: center;**/
+  /**margin-left: 70px;
+  margin-top: 75px;**/
 }
+
 .footer-social-icon {
   fill: var(--brand-color-name);
 }
+
+.footer-join {
+  margin-bottom: 20px;
+  padding-top: 0px;
+  /**justify-content: center;
+  align-items: center;**/
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-name {
+  /**display: flex;**/
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .footer-social-icon:hover,
 .footer-social-icon:focus {
   fill: var(--brand-color-name);
@@ -511,6 +547,9 @@ body {
   background-color: var(--brand-color-back);
   width: 270px;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .peculiaritiese-item:not(:last-child) {
   margin-right: 30px;
