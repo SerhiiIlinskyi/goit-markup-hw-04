@@ -156,17 +156,35 @@ body {
 .zwei-button-item:not(:last-child) {
   margin-right: 50px;
 }
-.icon-header .icon-header-item:focus,
-.icon-header .icon-header-item:hover {
+
+.icon-header-linc:hover,
+.icon-header-linc:focus {
   background-color: var(--brand-color-name);
   fill: var(--brand-color-basic);
 }
 
+.icon-header-item:hover,
+.icon-header-item:focus {
+  background-color: var(--brand-color-name);
+  fill: var(--brand-color-basic);
+}
+
+.icon-header:hover + .zwei-button-item,
+/**.icon-header-linc:focus + .zwei-button-item**/ {
+  background: var(--brand-color-basic);
+}
+
+.icon-header:hover + .zwei-button-item {
+  color: var(--brand-color-basic);
+}
 .icon-header {
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 }
 
 .icon-header-linc {
+  margin-right: 10px;
 }
 
 .icon-header-item {
@@ -191,7 +209,7 @@ body {
   background-size: cover;
   background-position: center;
   padding-top: 200px;
-  /padding-bottom: 200px;
+  padding-bottom: 200px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
