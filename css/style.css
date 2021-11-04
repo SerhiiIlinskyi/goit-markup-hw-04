@@ -157,26 +157,35 @@ body {
   margin-right: 50px;
 }
 
-.icon-header-linc:hover,
+/**.icon-header-linc:hover,
 .icon-header-linc:focus {
   background-color: var(--brand-color-name);
   fill: var(--brand-color-basic);
-}
+}**/
 
-.icon-header-item:hover,
-.icon-header-item:focus {
+.icon-header .icon-header-item:hover,
+.icon-header .icon-header-item:focus {
   background-color: var(--brand-color-name);
   fill: var(--brand-color-basic);
 }
-
-.icon-header:hover + .zwei-button-item,
-/**.icon-header-linc:focus + .zwei-button-item**/ {
-  background: var(--brand-color-basic);
-}
-
-.icon-header:hover + .zwei-button-item {
+.icon-header:hover .icon-header-item,
+.icon-header:focus .icon-header-item {
   color: var(--brand-color-basic);
 }
+
+.icon-header:hover,
+.icon-header:focus {
+  fill: var(--brand-color-basic);
+}
+.icon-header:hover .icon-header-item,
+.icon-header:focus .icon-header-item {
+  fill: var(--brand-color-basic);
+}
+.zwei-button .icon-header:hover,
+.zwei-button .icon-header:focus {
+  border: var(--brand-color-basic);
+}
+
 .icon-header {
   display: flex;
   align-items: center;
